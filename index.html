@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="shortcut icon" href="https://cdn3d.iconscout.com/3d/premium/thumb/currency-exchange-option-at-online-shopping-3d-icon-download-in-png-blend-fbx-gltf-file-formats--international-transactions-converter-websites-pack-e-commerce-icons-9764214.png?f=webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="everything">
+            <div class="header">
+        <h2>Currency Converter</h2>
+    </div>
+
+    <div class="converter">
+            <div class="INR">
+                <label>INR</label>
+            <input type="number" id="amountV" placeholder="0" min="0">
+            </div>
+            <div class="convertPIC">
+                <i class="fa-solid fa-arrow-right "></i>
+            </div>
+            <div class="result">
+                <label id="resultLBL" for="resultUnit">Select Unit</label>
+                <input type="number"  id="resultUnit" value="0" readonly>
+            </div>
+    </div>
+
+    <div class="selection">
+        <input type="radio" name="Currency" id="conUsd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INR to USD   
+        <br>     
+        <input type="radio" name="Currency" id="conCD">&nbsp;&nbsp; INR to Canadian Dollar    
+        <br>    
+        <input type="radio" name="Currency" id="conCHID">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INR to Chinese Yuan        
+        <br>
+        <input type="radio" name="Currency" id="conJAD">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INR to Japanese Yen        
+        <br>
+        <input type="radio" name="Currency" id="conRR">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INR to Russian Rubel        
+        <br>
+
+        <div class="btn">
+            <button id="subBtn">Convert</button>
+        </div>
+    <script src="index.js"></script>
+</body>
+</html>
